@@ -4,13 +4,13 @@ const { createBlog, index, show, respondWithBlog, respondWithBlogs } = require('
 
 
 // POST
-// Index /api/blog
+// Index /api/blogs
 router.get('/', index, respondWithBlogs )
 
-// Create /api/
+// Create /api/blogs
 router.post('/', createBlog, respondWithBlog )
 
-// Show /api
+// Show /api/blogs/:id
 router.get('/:id', show, respondWithBlog )
 
 module.exports = router
