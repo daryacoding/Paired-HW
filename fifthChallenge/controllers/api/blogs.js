@@ -38,7 +38,7 @@ const respondWithBlog = async (req, res, next) => {
 }
 
 const respondWithBlogs = (req, res, next) => {
-    res.json(res.locals.data.blog)
+    res.json(res.locals.data.blogs)
 }
 module.exports = {
     createBlog,
